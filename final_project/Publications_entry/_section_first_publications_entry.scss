@@ -1,0 +1,195 @@
+@use "../fonts";
+
+.container_first {
+  display: flex;
+  flex-direction: column;
+  margin: 0 280px 65px;
+
+  .penalty {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #323264;
+    display: flex;
+    justify-content: flex-start;
+    margin: 30px 0 15px;
+  }
+
+  .data {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #B3B3BA;
+    display: flex;
+
+
+  }
+
+  .hr {
+    margin: 30px 0;
+    display: flex;
+    width: 100%;
+  }
+
+  .pink_text {
+    @include fonts.pink-text;
+    margin: 30px 0 0;
+
+
+  }
+
+  p {
+    margin-top: 30px;
+  }
+
+  b {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #46466E;
+    margin: 30px 0 15px;
+  }
+
+  img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #pic2 {
+    text-align: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    justify-content: center;
+    color: #B3B3BA;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .number {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: right;
+    color: #F0145A;
+    margin-right: 10px;
+  }
+
+  .point {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+
+    img {
+      margin-right: 10px;
+      background: #F5F5FA;
+      border-radius: 12px;
+      padding: 9px;
+      width: 42px;
+      height: 42px;
+    }
+
+  }
+.icons img:hover{
+  background: #EDEDF7;
+  border-radius: 12px;
+  transition: 0.9s ease;
+}
+
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+
+}
+
+@media all and (max-width: 1920px) and (min-width: 1441px) {
+  .container_first {
+    display: flex;
+    flex-direction: column;
+    margin: 0 180px 65px;
+  }
+
+}
+
+@media all and (max-width: 1440px) and (min-width: 768px) {
+  .container_first {
+    margin: 0 60px 65px;
+  }
+
+}
+
+@media all and (max-width: 767px) {
+  .container_first {
+    margin: 0 30px 35px;
+
+    .penalty {
+      @include fonts.mobile-bold-fonts;
+      margin: 30px 0 15px;
+    }
+
+    .data {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    .pink_text {
+      font-size: 30px;
+      line-height: 37px;
+      margin: 30px 0 0;
+    }
+
+    b {
+      @include fonts.header_font;
+      color: #46466E;
+      margin: 30px 0 15px;
+    }
+
+    img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 300px;
+    }
+
+    #pic2 {
+      align-items: center;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      justify-content: center;
+      //color: #B3B3BA;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+      object-fit: cover;
+    }
+
+
+    .point, .number{
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+  }
+}
