@@ -1,0 +1,9 @@
+@use "../Homepage/header";
+@use "section_first_service_entry";
+@use "../Homepage/section_fifth";
+@use "../Homepage/footer";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
