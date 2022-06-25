@@ -1,0 +1,12 @@
+@use "../Homepage/footer";
+@use "../Homepage/header";
+@use "section_first_services";
+@use "../Homepage/section_fourth";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container_fourth{
+  margin-top: 60px;
+}
