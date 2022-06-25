@@ -1,0 +1,253 @@
+@use "../fonts";
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  padding: 50px 160px 0;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .logo {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .logo_menu {
+    display: none;
+  }
+
+  .number {
+    @include fonts.header_font;
+    color: #B3B3BA;
+  }
+
+  .number:hover {
+    color: #F0145A;
+    transition: 0.9s ease;
+
+  }
+
+  .logo2 {
+    display: none;
+  }
+
+  .logo_full {
+    display: none;
+  }
+
+  .right_side {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+    .contacts {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+
+    .dot {
+      display: flex;
+      background: #E6E6F0;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      margin: 6px;
+    }
+
+    .selected_lang {
+      background: #F0145A;
+      border-radius: 8px;
+      padding: 5px 7px;
+      color: #FFFFFF;
+    }
+
+    .language {
+      display: inline-flex;
+      padding: 5px 7px;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 60px;
+
+      color: #B3B3BA;
+    }
+
+    .language:hover {
+      background-color: #F5F5FA;
+      border-radius: 8px;
+      padding: 5px 7px;
+      transition: 0.9s ease;
+    }
+
+    .circle {
+      margin: 6px;
+    }
+
+    .location {
+      font-weight: 400;
+    }
+
+    .services {
+      color: #F0145A;
+      border-bottom: 2px solid #F0145A;
+      margin-top: 3px;
+    }
+
+    .nav_links {
+      margin: 7px;
+      color: #24A3FF;
+    }
+
+
+    .nav a:hover {
+      border-bottom: 2px solid #24A3FF;
+    }
+
+    .menu {
+      display: none;
+    }
+
+  }
+
+  .facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/Facebook-Headergray.svg");
+  }
+
+  .facebook:hover {
+    background-image: url("../images/Vector.svg");
+    transition: 0.9s ease;
+  }
+
+
+  @include fonts.header_font;
+  color: #B3B3BA;
+
+}
+
+@media screen and (max-width: 1920px) and (min-width: 992px) {
+  .container {
+    padding: 50px 60px;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 769px) {
+  .container {
+    display: flex;
+    padding: 50px 60px;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .logo {
+      display: none
+    }
+
+    .logo2 {
+      display: flex;
+      margin-bottom: 30px;
+      margin-left: 7px;
+    }
+
+    .right_side {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+
+      .contacts {
+        display: flex;
+        align-items: center;
+        margin-bottom: 35px;
+      }
+
+      .location {
+        font-weight: 400;
+        color: #B3B3BA;
+
+      }
+    }
+
+  }
+}
+
+@media all and (max-width: 769px)  {
+  .container {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .logo {
+      display: none;
+    }
+
+    .logo_full {
+      display: flex;
+      justify-content: flex-start;
+      max-width: 210px;
+    }
+
+    .right_side {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+
+      .contacts {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        flex-direction: row;
+
+      }
+
+      .lang {
+        font-size: 12px;
+      }
+
+      .circle, .facebook, .location, .nav a, .dot {
+        display: none;
+      }
+
+      .logo_menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+
+      }
+
+      .menu {
+        display: flex;
+        width: 32px;
+        height: 32px;
+        align-items: center;
+        justify-content: space-between;
+
+      }
+
+      .menu:hover {
+        background: #E6E6F0;
+        border-radius: 8px;
+        padding: 10px 7px;
+        transition: 0.9s ease;
+      }
+    }
+  }
+  .block {
+    background: rgba(245, 245, 250, 0.2);
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 55px;
+    margin-top: -15px;
+  }
+}

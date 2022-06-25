@@ -1,0 +1,10 @@
+@use 'header_contacts';
+@use "section_first_contacts";
+@use "../Homepage/footer";
+@use "../fonts";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
