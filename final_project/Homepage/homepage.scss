@@ -1,0 +1,13 @@
+@use 'header';
+@use 'section_first';
+@use 'section_second';
+@use 'section_third';
+@use "section_fourth";
+@use "section_fifth";
+@use 'footer';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

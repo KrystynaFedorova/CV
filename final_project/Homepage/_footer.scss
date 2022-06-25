@@ -1,0 +1,150 @@
+.container_footer{
+  background: #F5F5FA;
+  flex-direction: column;
+  display: flex;
+  padding: 30px 160px ;
+  .up{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    flex-direction: row;
+    align-items: center;
+
+  }
+  .sep{
+    margin: 10px;
+  }
+
+  .down{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+  }
+  #hlegal{
+    display: none;
+  }
+  .adress{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #323264;
+  }
+.map{
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #24A3FF;
+}
+  .map:hover{
+    color: #F0145A;
+    transition: 0.9s ease;
+  }
+  .number{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #46466E;
+
+  }
+
+  .first-line{
+    display: flex;
+    justify-content: space-between;
+  }
+  .right{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B3B3BA;
+    display: flex;
+  }
+  .email a, .map a{
+    color: #24A3FF;
+
+  }
+  .dot_footer{
+    display: flex;
+    background: #B3B3BA;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 6px;
+  }
+  .email a:hover{
+     color: #F0145A;
+    transition: 0.9s ease;
+   }
+.facebook__footer{
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  background-image: url("../images/Vectorblue_footer_fb.svg");
+}
+  .facebook__footer:hover{
+    transition: 0.9s ease;
+    background-image: url("../images/Vectorpink_footer_fb.svg");
+  }
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24A3FF;
+
+}
+
+@media all and (max-width: 1920px) and (min-width: 769px) {
+  .container_footer {
+    padding: 30px 60px 50px;
+  }
+}
+
+@media all and (max-width: 768px) and (min-width: 0) {
+  .container_footer{
+    background: #F5F5FA;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 30px;
+    .up{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+    .down{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+flex-direction: column;
+      margin-bottom: 30px;
+    }
+
+    .first-line{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .sep{
+      display: none;
+    }
+.dot_footer{
+  display: none;
+}
+    .second{
+      display: none;
+    }
+    #hlegal{
+      display: flex;
+    }
+
+  }
+
+}
